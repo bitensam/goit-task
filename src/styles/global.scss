@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  padding: 42px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1000px 500px 750px 100px;
+}
