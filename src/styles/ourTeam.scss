@@ -1,3 +1,159 @@
 .ourTeam {
-  background-color: greenyellow;
+  background-color: #fff;
+  padding: 56px 0 96px;
+
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    color: #333333;
+    text-align: center;
+
+    &--italic {
+      font-size: 24px;
+      font-weight: 400;
+      font-family: "Kaushan Script";
+      margin-bottom: 16px;
+    }
+
+    &--bold {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-family: "Montserrat";
+    }
+  }
+
+  &__description-wrapper {
+    padding: 48px 192px;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-align: center;
+  }
+
+  &__content-wrapper {
+    padding: 48px 192px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+  }
+}
+
+.member {
+  width: 380px;
+  height: 470px;
+  background-color: #95e1d3;
+
+  &__container {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in 0.1s;
+
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+
+    &:hover {
+      top: -10px;
+      left: -10px;
+
+      .member__actions {
+        opacity: 1;
+      }
+
+      .member__actions__icon-wrapper {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(
+      0deg,
+      hsla(47, 93%, 76%, 0.776) 0%,
+      hsla(5, 84%, 73%, 0.893) 100%
+    );
+    transition: opacity 0.3s ease;
+
+    &__icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: inherit;
+      height: inherit;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out 0.3s;
+    }
+
+    &__icon {
+      width: 56px;
+      height: 56px;
+      background-color: #fce38a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid #f38181;
+      cursor: pointer;
+
+      &:last-of-type {
+        border-right: none;
+      }
+
+      &:hover {
+        background-color: #f38181;
+        .a {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-weight: 300;
+    font-style: italic;
+    font-family: "Roboto";
+    text-align: center;
+  }
 }

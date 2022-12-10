@@ -32,11 +32,13 @@
     padding: 64px 192px 48px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+    row-gap: 48px;
   }
 }
 
 .card {
-  padding: 18px 0 18px 14px;
+  padding: 4px;
   display: grid;
   grid-template-columns: 1fr 5fr;
 
@@ -50,7 +52,7 @@
   }
 
   &__text {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 24px;
     color: #999999;
     font-weight: 400;
