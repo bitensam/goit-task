@@ -8,8 +8,18 @@
 
 main {
   width: 100%;
-  padding: 42px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1000px 500px 750px 100px;
+  grid-template-rows: 1000px 550px 750px 100px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 0 auto;
 }
