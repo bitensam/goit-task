@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 main {
   width: 100%;
   display: grid;
