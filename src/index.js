@@ -1,7 +1,7 @@
-const toggleBtn = document.querySelector(".banner__menu-toggle-wrapper");
+const openBtn = document.querySelector(".banner__menu-button-wrapper");
+const closeBtn = document.querySelector(".banner__menu-button--close");
 const menu = document.querySelector(".banner__menu-wrapper");
 const navLinks = document.querySelectorAll(".banner__menu-item");
-
 const windowWidth = window.innerWidth;
 
 const showMenu = () => {
@@ -13,11 +13,11 @@ const hideMenu = () => {
 };
 
 const showMenuButton = () => {
-  toggleBtn.classList.remove("hide");
+  openBtn.classList.remove("hide");
 };
 
 const hideMenuButton = () => {
-  toggleBtn.classList.add("hide");
+  openBtn.classList.add("hide");
 };
 
 if (windowWidth >= 999) {
@@ -35,7 +35,7 @@ window.addEventListener("resize", () => {
   }
 });
 
-toggleBtn.addEventListener("click", () => {
+openBtn.addEventListener("click", () => {
   showMenu();
   hideMenuButton();
 });
