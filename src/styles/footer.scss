@@ -55,3 +55,63 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    padding: 0 64px 48px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .footer {
+    &__input {
+      width: 200px;
+    }
+
+    &__button {
+      width: 80px;
+      font-size: 11px;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .footer {
+    padding: 0 24px 24px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    &__signature {
+      margin-bottom: 24px;
+    }
+
+    &__container {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__input {
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    &__signature {
+      font-size: 11px;
+      margin-bottom: 18px;
+    }
+
+    &__input {
+      width: 200px;
+    }
+
+    &__button {
+      width: 60px;
+      font-size: 8px;
+    }
+  }
+}

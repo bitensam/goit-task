@@ -54,6 +54,12 @@
   height: 470px;
   background-color: #95e1d3;
 
+  &:nth-of-type(1) {
+    img {
+      object-position: 25% 50%;
+    }
+  }
+
   &__container {
     position: relative;
     width: inherit;
@@ -66,10 +72,6 @@
       width: inherit;
       height: inherit;
       object-fit: cover;
-
-      &:nth-of-type(1) {
-        object-position: 25% 50%;
-      }
     }
 
     &:hover {
@@ -159,5 +161,107 @@
     font-style: italic;
     font-family: "Roboto";
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .ourTeam {
+    &__description-wrapper {
+      padding: 38px 144px;
+    }
+
+    &__content-wrapper {
+      padding: 32px 64px;
+    }
+  }
+
+  .member {
+    width: 250px;
+    height: 310px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .ourTeam {
+    &__title-wrapper {
+      margin-bottom: 36px;
+    }
+
+    &__title {
+      &--italic {
+        font-size: 20px;
+      }
+
+      &--bold {
+        font-size: 26px;
+      }
+    }
+
+    &__content-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 96px;
+    }
+  }
+
+  .member {
+    width: 380px;
+    height: 470px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .ourTeam {
+    &__content-wrapper {
+      padding: 42px 24px 24px;
+      column-gap: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ourTeam {
+    &__description-wrapper {
+      padding: 24px 64px;
+    }
+  }
+
+  .member {
+    width: 250px;
+    height: 310px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .ourTeam {
+    &__description-wrapper {
+      padding: 24px 32px;
+    }
+
+    &__description {
+      font-size: 12.5px;
+      line-height: 20px;
+    }
+
+    &__title {
+      &--italic {
+        font-size: 18px;
+        margin-bottom: 14px;
+      }
+
+      &--bold {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .member {
+    &__title {
+      font-size: 11px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
   }
 }
