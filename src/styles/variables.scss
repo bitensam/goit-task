@@ -1,0 +1,21 @@
+$color--primary: #f38181;
+$color--secondary: #fce38a;
+$color--dark: #333333;
+$color--darkgrey: #999999;
+$color--lightgrey: #e5e5e5;
+$color--white: #fff;
+$color--tertiary: #95e1d3;
+
+$gradient--primary: linear-gradient(
+  0deg,
+  hsla(47, 93%, 76%, 0.8) 0%,
+  hsla(5, 84%, 73%, 0.9) 100%
+);
+
+$font--primary: "Montserrat", sans-serif;
+$font--secondary: "Roboto", sans-serif;
+$font--tertiary: "Kaushan Script", cursive;
+
+$fw--bold: 700;
+$fw--regular: 400;
+$fw--thin: 300;

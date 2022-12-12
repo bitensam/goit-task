@@ -1,3 +1,97 @@
+@use "./variables.scss" as *;
+
 .services {
-  background-color: aquamarine;
+  background-color: $color--white;
+  padding-top: 56px;
+
+  &__content-wrapper {
+    padding: 64px 192px 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+    row-gap: 48px;
+  }
+}
+
+.card {
+  padding: 4px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $color--dark;
+    font-weight: $fw--bold;
+    font-family: $font--primary;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: $color--darkgrey;
+    font-weight: $fw--regular;
+    font-family: $font--secondary;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .services {
+    &__content-wrapper {
+      padding: 56px 64px 32px;
+      column-gap: 42px;
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .services {
+    padding-top: 48px;
+
+    &__content-wrapper {
+      padding: 56px 64px 32px;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 42px;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .services {
+    &__content-wrapper {
+      padding: 42px 24px 24px;
+      column-gap: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .services {
+    &__content-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .services {
+    &__content-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 12px;
+      row-gap: 32px;
+    }
+  }
+  .card {
+    &__title {
+      font-size: 11px;
+      margin-bottom: 14px;
+    }
+
+    &__text {
+      font-size: 11px;
+      line-height: 18px;
+    }
+  }
 }

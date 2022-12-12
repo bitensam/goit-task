@@ -1,3 +1,119 @@
-footer {
-  background-color: purple;
+@use "./variables.scss" as *;
+
+.footer {
+  padding: 0 192px 96px;
+
+  hr {
+    height: 1px;
+    border: none;
+    background-color: $color--lightgrey;
+  }
+
+  &__container {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__signature {
+    font-size: 14px;
+    color: $color--darkgrey;
+    font-weight: $fw--bold;
+    font-family: $font--primary;
+
+    span {
+      color: $color--primary;
+    }
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    width: 230px;
+    height: 40px;
+    background-color: $color--white;
+    border: 1px solid #e7e7e7;
+    padding: 8px;
+    color: $color--dark;
+    font-weight: $fw--thin;
+    font-style: italic;
+    font-family: $font--secondary;
+  }
+
+  &__button {
+    width: 150px;
+    height: 40px;
+    background-color: $color--tertiary;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $color--white;
+    font-weight: $fw--bold;
+    font-family: $font--primary;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    padding: 0 64px 48px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .footer {
+    &__input {
+      width: 200px;
+    }
+
+    &__button {
+      width: 80px;
+      font-size: 11px;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .footer {
+    padding: 0 24px 24px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    &__signature {
+      margin-bottom: 24px;
+    }
+
+    &__container {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__input {
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    &__signature {
+      font-size: 11px;
+      margin-bottom: 18px;
+    }
+
+    &__input {
+      width: 200px;
+    }
+
+    &__button {
+      width: 60px;
+      font-size: 8px;
+    }
+  }
 }
