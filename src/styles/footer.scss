@@ -1,10 +1,12 @@
+@use "./variables.scss" as *;
+
 .footer {
   padding: 0 192px 96px;
 
   hr {
     height: 1px;
     border: none;
-    background-color: #e5e5e5;
+    background-color: $color--lightgrey;
   }
 
   &__container {
@@ -16,12 +18,12 @@
 
   &__signature {
     font-size: 14px;
-    color: #333333;
-    font-weight: 700;
-    font-family: "Montserrat";
+    color: $color--darkgrey;
+    font-weight: $fw--bold;
+    font-family: $font--primary;
 
     span {
-      color: #f38181;
+      color: $color--primary;
     }
   }
 
@@ -32,24 +34,24 @@
   &__input {
     width: 230px;
     height: 40px;
-    background-color: #ffffff;
+    background-color: $color--white;
     border: 1px solid #e7e7e7;
     padding: 8px;
-    color: #333333;
-    font-weight: 300;
+    color: $color--dark;
+    font-weight: $fw--thin;
     font-style: italic;
-    font-family: "Roboto";
+    font-family: $font--secondary;
   }
 
   &__button {
     width: 150px;
     height: 40px;
-    background-color: #95e1d3;
+    background-color: $color--tertiary;
     font-size: 14px;
     text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 700;
-    font-family: "Montserrat";
+    color: $color--white;
+    font-weight: $fw--bold;
+    font-family: $font--primary;
     text-align: center;
     border: none;
     cursor: pointer;

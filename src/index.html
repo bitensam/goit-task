@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@1,600&family=Roboto:ital,wght@0,400;1,300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap"
       rel="stylesheet"
     />
     <title>MoGo Landing Page</title>
@@ -89,21 +89,23 @@
             </ul>
           </div>
         </nav>
-        <div class="banner__title-wrapper">
+        <header class="banner__title-wrapper">
           <h2 class="banner__title banner__title--italic">Creative Template</h2>
-          <h1 class="banner__title banner__title--bold">Welcome to mogo</h1>
-        </div>
+          <h1 class="banner__title banner__title--uppercase">
+            Welcome to mogo
+          </h1>
+        </header>
         <div class="banner__button-wrapper">
           <button class="banner__button">Learn more</button>
         </div>
       </section>
-      <section class="services">
-        <div class="services__title-wrapper">
-          <h4 class="services__title services__title--italic">We work with</h4>
-          <h3 class="services__title services__title--bold">
+      <section class="services section">
+        <header class="services__title-wrapper section__header">
+          <h4 class="section__title section__title--italic">We work with</h4>
+          <h3 class="section__title section__title--uppercase">
             Amazing services
           </h3>
-        </div>
+        </header>
         <div class="divider"></div>
         <div class="services__content-wrapper">
           <div class="card">
@@ -281,11 +283,13 @@
           </div>
         </div>
       </section>
-      <section class="ourTeam">
-        <div class="ourTeam__title-wrapper">
-          <h4 class="ourTeam__title ourTeam__title--italic">Who we are</h4>
-          <h3 class="ourTeam__title ourTeam__title--bold">Meet our team</h3>
-        </div>
+      <section class="ourTeam section">
+        <header class="ourTeam__title-wrapper section__header">
+          <h4 class="section__title section__title--italic">Who we are</h4>
+          <h3 class="section__title section__title--uppercase">
+            Meet our team
+          </h3>
+        </header>
         <div class="divider"></div>
         <div class="ourTeam__description-wrapper">
           <p class="ourTeam__description">
@@ -299,13 +303,21 @@
           <div class="member">
             <div class="member__container">
               <img
-                srcset="/src/assets/images/matthew_dix@2x.png 2x /src/assets/images/matthew_dix@3x.png 3x"
+                srcset="
+                  /src/assets/images/matthew_dix@2x.png 2x,
+                  /src/assets/images/matthew_dix@3x.png 3x
+                "
                 src="/src/assets/images/matthew_dix.png"
                 alt="matthew-dix-graphic-designer"
               />
               <div class="member__actions">
                 <div class="member__actions__icon-wrapper">
-                  <a href="https://facebook.com" class="member__actions__icon">
+                  <a
+                    href="https://facebook.com"
+                    aria-label="link to matthew dix facebook profile"
+                    class="member__actions__icon"
+                    role="button"
+                  >
                     <svg
                       class="svg"
                       version="1.2"
@@ -325,7 +337,12 @@
                       />
                     </svg>
                   </a>
-                  <a href="https://twitter.com" class="member__actions__icon">
+                  <a
+                    href="https://twitter.com"
+                    aria-label="link to matthew dix twitter profile"
+                    class="member__actions__icon"
+                    role="button"
+                  >
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -344,7 +361,12 @@
                       />
                     </svg>
                   </a>
-                  <a href="https://pinterest.com" class="member__actions__icon">
+                  <a
+                    href="https://pinterest.com"
+                    aria-label="link to matthew dix pinterest profile"
+                    class="member__actions__icon"
+                    role="button"
+                  >
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -363,7 +385,12 @@
                       />
                     </svg>
                   </a>
-                  <a href="https://instagram.com" class="member__actions__icon">
+                  <a
+                    href="https://instagram.com"
+                    aria-label="link to matthew dix instagram profile"
+                    class="member__actions__icon"
+                    role="button"
+                  >
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -394,14 +421,22 @@
           <div class="member">
             <div class="member__container">
               <img
-                srcset="/src/assets/images/christopher_campbell@2x.png 2x /src/assets/images/christopher_campbell@3x.png 3x"
+                srcset="
+                  /src/assets/images/christopher_campbell@2x.png 2x,
+                  /src/assets/images/christopher_campbell@3x.png 3x
+                "
                 src="/src/assets/images/christopher_campbell.png"
                 alt="christopher-campbell-branding-ux-designer"
               />
               <div class="member__image"></div>
               <div class="member__actions">
                 <div class="member__actions__icon-wrapper">
-                  <a href="https://facebook.com" class="member__actions__icon">
+                  <a
+                    href="https://facebook.com"
+                    aria-label="link to christopher campbell facbook profile"
+                    class="member__actions__icon"
+                    role="button"
+                  >
                     <svg
                       class="svg"
                       version="1.2"
@@ -421,7 +456,12 @@
                       />
                     </svg>
                   </a>
-                  <a href="https://twitter.com" class="member__actions__icon">
+                  <a
+                    href="https://twitter.com"
+                    aria-label="link to christopher campbell twitter profile"
+                    class="member__actions__icon"
+                    role="button"
+                  >
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -440,7 +480,12 @@
                       />
                     </svg>
                   </a>
-                  <a href="https://pinterest.com" class="member__actions__icon">
+                  <a
+                    href="https://pinterest.com"
+                    aria-label="link to christopher campbell pinterest profile"
+                    class="member__actions__icon"
+                    role="button"
+                  >
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -459,7 +504,12 @@
                       />
                     </svg>
                   </a>
-                  <a href="https://instagram.com" class="member__actions__icon">
+                  <a
+                    href="https://instagram.com"
+                    aria-label="link to christopher campbell instagram profile"
+                    class="member__actions__icon"
+                    role="button"
+                  >
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -490,14 +540,22 @@
           <div class="member">
             <div class="member__container">
               <img
-                srcset="/src/assets/images/michael_fertig@2x.png 2x /src/assets/images/michael_fertig@3x.png 3x"
+                srcset="
+                  /src/assets/images/michael_fertig@2x.png 2x,
+                  /src/assets/images/michael_fertig@3x.png 3x
+                "
                 src="/src/assets/images/michael_fertig.png"
                 alt="michael-fertig-developer"
               />
               <div class="member__image"></div>
               <div class="member__actions">
                 <div class="member__actions__icon-wrapper">
-                  <a href="https://facebook.com" class="member__actions__icon">
+                  <a
+                    href="https://facebook.com"
+                    aria-label="link to michael fertig facebook profile"
+                    class="member__actions__icon"
+                    role="button"
+                  >
                     <svg
                       class="svg"
                       version="1.2"
@@ -517,7 +575,12 @@
                       />
                     </svg>
                   </a>
-                  <a href="https://twitter.com" class="member__actions__icon">
+                  <a
+                    href="https://twitter.com"
+                    aria-label="link to michael fertig twitter profile"
+                    class="member__actions__icon"
+                    role="button"
+                  >
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -536,7 +599,12 @@
                       />
                     </svg>
                   </a>
-                  <a href="https://pinterest.com" class="member__actions__icon">
+                  <a
+                    href="https://pinterest.com"
+                    aria-label="link to michael fertig pinterest profile"
+                    class="member__actions__icon"
+                    role="button"
+                  >
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -555,7 +623,12 @@
                       />
                     </svg>
                   </a>
-                  <a href="https://instagram.com" class="member__actions__icon">
+                  <a
+                    href="https://instagram.com"
+                    aria-label="link to michael fertig instagram profile"
+                    class="member__actions__icon"
+                    role="button"
+                  >
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"

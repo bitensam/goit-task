@@ -1,3 +1,5 @@
+@use "./variables.scss" as *;
+
 *,
 *::after,
 *::before {
@@ -19,20 +21,80 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  // grid-template-rows: 1000px 550px 750px 100px;
 }
 
 p {
   font-size: 14px;
 }
 
+.section {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    color: $color--dark;
+    text-align: center;
+
+    &--italic {
+      font-size: 24px;
+      font-weight: $fw--regular;
+      font-family: $font--tertiary;
+      margin-bottom: 16px;
+    }
+
+    &--uppercase {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-family: $font--primary;
+    }
+  }
+}
+
 .divider {
   width: 60px;
   height: 3px;
-  background-color: #f38181;
+  background-color: $color--primary;
   margin: 0 auto;
 }
 
 .hide {
   display: none;
+}
+
+@media screen and (max-width: 999px) {
+  .section {
+    &__header {
+      margin-bottom: 36px;
+    }
+
+    &__title {
+      &--italic {
+        font-size: 20px;
+      }
+
+      &--uppercase {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section {
+    &__title {
+      &--italic {
+        font-size: 18px;
+        margin-bottom: 14px;
+      }
+
+      &--uppercase {
+        font-size: 24px;
+      }
+    }
+  }
 }

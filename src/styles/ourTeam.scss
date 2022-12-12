@@ -1,32 +1,8 @@
+@use "./variables.scss" as *;
+
 .ourTeam {
-  background-color: #fff;
+  background-color: $color--white;
   padding: 56px 0 96px;
-
-  &__title-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 48px;
-  }
-
-  &__title {
-    color: #333333;
-    text-align: center;
-
-    &--italic {
-      font-size: 24px;
-      font-weight: 400;
-      font-family: "Kaushan Script";
-      margin-bottom: 16px;
-    }
-
-    &--bold {
-      font-size: 30px;
-      text-transform: uppercase;
-      font-family: "Montserrat";
-    }
-  }
 
   &__description-wrapper {
     padding: 48px 192px;
@@ -35,9 +11,9 @@
   &__description {
     font-size: 15px;
     line-height: 24px;
-    color: #999999;
-    font-weight: 400;
-    font-family: "Roboto";
+    color: $color--darkgrey;
+    font-weight: $fw--regular;
+    font-family: $font--secondary;
     text-align: center;
   }
 
@@ -52,7 +28,7 @@
 .member {
   width: 380px;
   height: 470px;
-  background-color: #95e1d3;
+  background-color: $color--tertiary;
 
   &:nth-of-type(1) {
     img {
@@ -95,11 +71,7 @@
     opacity: 0;
     width: inherit;
     height: inherit;
-    background: linear-gradient(
-      0deg,
-      hsla(47, 93%, 76%, 0.776) 0%,
-      hsla(5, 84%, 73%, 0.893) 100%
-    );
+    background: $gradient--primary;
     transition: opacity 0.3s ease;
 
     &__icon-wrapper {
@@ -115,11 +87,11 @@
     &__icon {
       width: 56px;
       height: 56px;
-      background-color: #fce38a;
+      background-color: $color--secondary;
       display: flex;
       justify-content: center;
       align-items: center;
-      border-right: 1px solid #f38181;
+      border-right: 1px solid $color--primary;
       cursor: pointer;
 
       &:last-of-type {
@@ -127,9 +99,9 @@
       }
 
       &:hover {
-        background-color: #f38181;
+        background-color: $color--primary;
         .a {
-          fill: #fff;
+          fill: $color--white;
         }
       }
     }
@@ -146,9 +118,9 @@
   &__title {
     font-size: 14px;
     text-transform: uppercase;
-    color: #333333;
-    font-weight: 700;
-    font-family: "Montserrat";
+    color: $color--dark;
+    font-weight: $fw--bold;
+    font-family: $font--primary;
     text-align: center;
     margin-bottom: 8px;
   }
@@ -156,10 +128,10 @@
   &__text {
     font-size: 15px;
     line-height: 24px;
-    color: #999999;
-    font-weight: 300;
+    color: $color--darkgrey;
+    font-weight: $fw--thin;
     font-style: italic;
-    font-family: "Roboto";
+    font-family: $font--secondary;
     text-align: center;
   }
 }
@@ -183,20 +155,6 @@
 
 @media screen and (max-width: 999px) {
   .ourTeam {
-    &__title-wrapper {
-      margin-bottom: 36px;
-    }
-
-    &__title {
-      &--italic {
-        font-size: 20px;
-      }
-
-      &--bold {
-        font-size: 26px;
-      }
-    }
-
     &__content-wrapper {
       grid-template-columns: repeat(1, 1fr);
       row-gap: 96px;
@@ -241,17 +199,6 @@
     &__description {
       font-size: 12.5px;
       line-height: 20px;
-    }
-
-    &__title {
-      &--italic {
-        font-size: 18px;
-        margin-bottom: 14px;
-      }
-
-      &--bold {
-        font-size: 24px;
-      }
     }
   }
 

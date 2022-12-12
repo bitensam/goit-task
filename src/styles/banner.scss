@@ -1,9 +1,7 @@
+@use "./variables.scss" as *;
+
 .banner {
-  background: linear-gradient(
-      0deg,
-      hsla(47, 93%, 76%, 0.776) 0%,
-      hsla(5, 84%, 73%, 0.893) 100%
-    ),
+  background: $gradient--primary,
     url("/src/assets/images/hawk.png") center center no-repeat;
   padding-bottom: 300px;
   &__navbar {
@@ -19,20 +17,20 @@
   }
 
   &__logo {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-family: $font--primary;
+    font-weight: $fw--bold;
     font-size: 30px;
-    color: #fff;
+    color: $color--white;
   }
 
   &__menu-button {
     background: transparent;
     border: none;
-    color: #fff;
+    color: $color--white;
     display: block;
 
     :hover {
-      color: #fce38a;
+      color: $color--secondary;
     }
   }
 
@@ -50,16 +48,16 @@
 
     a {
       text-decoration: none;
-      color: #fff;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 400;
+      color: $color--white;
+      font-family: $font--primary;
+      font-weight: $fw--regular;
       font-size: 14px;
       text-transform: uppercase;
 
       &:hover {
-        color: #fce38a;
+        color: $color--secondary;
         text-decoration: underline;
-        text-decoration-color: #fce38a;
+        text-decoration-color: $color--secondary;
         text-decoration-style: solid;
         text-decoration-thickness: 2px;
         text-underline-offset: 10px;
@@ -76,19 +74,19 @@
   }
 
   &__title {
-    color: #fff;
+    color: $color--white;
     max-width: 700px;
     text-align: center;
 
     &--italic {
-      font-family: "Kaushan Script";
+      font-family: $font--tertiary;
       font-size: 42px;
       letter-spacing: 2px;
       margin-bottom: 24px;
     }
 
-    &--bold {
-      font-family: "Montserrat", sans-serif;
+    &--uppercase {
+      font-family: $font--primary;
       text-transform: uppercase;
       font-size: 96px;
       line-height: 1;
@@ -103,20 +101,20 @@
   }
 
   &__button {
-    font-family: "Montserrat", sans-serif;
+    font-family: $font--primary;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: $fw--bold;
     font-size: 14px;
-    color: #fff;
+    color: $color--white;
     background-color: transparent;
     padding: 8px 24px;
     cursor: pointer;
-    border: 3px solid #fff;
+    border: 3px solid $color--white;
     transition: all 0.3s ease-in;
 
     &:hover {
-      background-color: #fff;
-      color: #f38181;
+      background-color: $color--white;
+      color: $color--primary;
     }
   }
 }
@@ -134,7 +132,7 @@
         font-size: 30px;
       }
 
-      &--bold {
+      &--uppercase {
         font-size: 64px;
       }
     }
@@ -153,7 +151,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      background: #333;
+      background: $color--dark;
       padding: 64px 0 48px;
     }
 
@@ -165,7 +163,7 @@
       display: block;
 
       :hover {
-        color: #fce38a;
+        color: $color--secondary;
       }
     }
   }
@@ -196,7 +194,7 @@
         font-size: 24px;
       }
 
-      &--bold {
+      &--uppercase {
         font-size: 46px;
       }
     }
@@ -222,7 +220,7 @@
         font-size: 20px;
       }
 
-      &--bold {
+      &--uppercase {
         font-size: 42px;
       }
     }
