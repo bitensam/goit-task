@@ -34,6 +34,12 @@
     font-weight: $fw--regular;
     font-family: $font--secondary;
   }
+
+  &__icon {
+    .a {
+      fill: $color--primary;
+    }
+  }
 }
 
 @media screen and (max-width: 1280px) {
