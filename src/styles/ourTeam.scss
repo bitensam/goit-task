@@ -94,6 +94,10 @@
       border-right: 1px solid $color--primary;
       cursor: pointer;
 
+      .a {
+        fill: $color--primary;
+      }
+
       &:last-of-type {
         border-right: none;
       }
